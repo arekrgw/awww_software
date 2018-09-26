@@ -4,8 +4,19 @@
   padding: 0;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
+
+button {
+  cursor: pointer; }
 
 header {
   position: relative;
@@ -27,7 +38,9 @@ nav {
   position: absolute;
   top: 15px;
   right: 25px;
-  color: white; }
+  color: white;
+  z-index: 2;
+  cursor: pointer; }
 
 .logo {
   display: flex;
@@ -41,7 +54,7 @@ nav {
   filter: invert(100%); }
 
 .logo span {
-  font-size: 43px;
+  font-size: 38px;
   margin-left: -5px;
   color: #fff;
   font-weight: 200; }
@@ -51,25 +64,34 @@ nav {
   list-style-type: none;
   position: fixed;
   top: 0;
+  width: 100%;
   bottom: 0;
-  right: 0;
-  left: 0;
+  left: 100%;
   z-index: 2;
-  display: none; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out; }
 
 .nav ul {
-  list-style-type: none; }
+  list-style-type: none;
+  width: 60%; }
 
 .nav li {
   text-align: center;
-  margin: 15px 0;
-  width: 33.33333%;
+  margin: 25px 0;
   color: #fff;
   font-weight: 400;
-  font-size: 18px; }
+  font-size: 24px;
+  width: 100%;
+  cursor: pointer; }
+
+.ex-hide {
+  font-size: 60px !important;
+  font-weight: 200 !important;
+  cursor: pointer; }
 
 .special {
-  width: 40% !important;
   padding: 15px 30px;
   border: 1px solid #5c7cc7;
   border-radius: 25px; }
@@ -92,14 +114,15 @@ nav {
 .button-group {
   margin: 60px 20px; }
 
-.button-group button {
+.button-group button, .button-group a {
   padding: 20px 30px;
   color: white;
   font-size: 18px;
   display: block;
   width: 100%;
   border: none;
-  margin: 10px 0; }
+  margin: 10px 0;
+  text-align: center; }
 
 .do {
   background: #6166ed; }
@@ -121,11 +144,6 @@ nav {
   display: block !important;
   margin: 0 auto; }
 
-section {
-  margin: 15px 20px 0 20px;
-  display: flex;
-  flex-direction: column; }
-
 .side {
   width: 100%;
   margin: 30px 0; }
@@ -142,12 +160,16 @@ section {
     font-size: 16px;
     line-height: 30px; }
 
-.whatwedo .right {
-  order: 1; }
-.whatwedo .left {
-  order: 2; }
-.whatwedo .modals {
-  order: 3; }
+.whatwedo {
+  margin: 15px 20px 0 20px;
+  display: flex;
+  flex-direction: column; }
+  .whatwedo .right {
+    order: 1; }
+  .whatwedo .left {
+    order: 2; }
+  .whatwedo .modals {
+    order: 3; }
 
 .modals {
   margin: 0 20px; }
@@ -183,5 +205,115 @@ section {
     background: #4b479e; }
     .modal button i {
       color: #52e6c7; }
+
+.tech1, .tech2 {
+  padding: 15px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0; }
+  .tech1 p:nth-of-type(1), .tech2 p:nth-of-type(1) {
+    margin-bottom: 20px; }
+  .tech1 img, .tech2 img {
+    padding: 0; }
+
+.tech2 {
+  background: none; }
+
+footer {
+  background: url(../imgs/bg1.jpg) center center;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column; }
+
+.contact {
+  order: 2;
+  width: 100%;
+  margin-top: 50px; }
+  .contact p {
+    font-size: 18px;
+    text-align: center; }
+    .contact p span {
+      color: #76ad75; }
+  .contact hr {
+    border: none;
+    margin: 10px 0; }
+  .contact .socials {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .contact .socials i {
+      font-size: 35px;
+      margin: 0 15px;
+      transition: all 0.3s ease-in-out; }
+      .contact .socials i:hover {
+        color: #76ad75; }
+
+.form {
+  order: 1;
+  width: 100%;
+  margin-top: 50px; }
+  .form h3 {
+    text-align: center;
+    font-size: 30px; }
+  .form .input-group {
+    width: 100%;
+    position: relative;
+    margin: 30px 0; }
+    .form .input-group input {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      font-size: 20px;
+      padding: 10px 5px;
+      color: #fff;
+      outline: none; }
+      .form .input-group input:focus ~ label, .form .input-group input:valid ~ label {
+        bottom: 39px;
+        font-size: 12px; }
+    .form .input-group label {
+      position: absolute;
+      left: 5px;
+      bottom: 10px;
+      transition: all 0.3s ease-in-out;
+      font-size: 18px; }
+  .form .input-group-big {
+    position: relative;
+    width: 100%; }
+    .form .input-group-big textarea {
+      background: none;
+      border: none;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      font-size: 20px;
+      padding: 10px 5px;
+      color: #fff;
+      outline: none;
+      min-height: 150px; }
+    .form .input-group-big label {
+      position: absolute;
+      left: 5px;
+      top: -10px;
+      font-size: 12px; }
+  .form button {
+    width: 100%;
+    background: none;
+    border: 1px solid #76ad75;
+    color: #76ad75;
+    padding: 15px 0;
+    font-size: 19px;
+    border-radius: 25px;
+    margin-top: 30px; }
+
+.bottom-bar {
+  width: 100%;
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  order: 3; }
 
 /*# sourceMappingURL=main.css.map */

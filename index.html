@@ -20,6 +20,7 @@
             </div>
             <div class="nav">
                 <ul>
+                    <li class="ex-hide">X</li>
                     <li>About us</li>
                     <li>Services</li>
                     <li>Case studies</li>
@@ -32,8 +33,8 @@
             <h1>We create websites <span class="line-break"></span>and eCommerce</h1>
             <p>Wordpress & Woocommerce Software house</p>
             <div class="button-group">
-                <button class="do">What we do?</button>
-                <button class="vid">Watch team video</button>
+                <a class="do" href="#wedo">What we do?</a>
+                <a class="vid" href="">Watch team video</a>
             </div>
         </div>
         <div class="img-group">
@@ -47,7 +48,7 @@
     </header>
 
     <main>
-        <section class="whatwedo">
+        <section id="wedo" class="whatwedo">
             <div class="left side">
                 <img src="imgs/awww-illustration-1.png" alt="Illustration">
             </div>
@@ -82,9 +83,77 @@
                 </div>                
             </div>
         </section>
-        <section class="tech">
-            
+        <section class="tech1">
+            <div class="left side">
+                <h3>Technology</h3>
+                <p>We create beautiful, fast and secure website tailored exclusively for your business goals. We cover frontend and backend using top and most innovative tech stacks. We are experienced in using Wordpress CMS.</p>
+                <p>CSS3, Bootstrap, SCSS, BEM, RWD, JavaScript, jQuery, ES6+, Gulp, Git, NPM, PWA, React, Redux, NodeJS, PHP, MySQL, MongoDB, WordPress, ACF, WooCommerce</p>
+            </div>
+            <div class="right side">
+                <img src="imgs/awww-stack.png" alt="Stack">
+            </div>
         </section>
+        <section class="tech2">
+            <div class="left side">
+                <h3>Technology</h3>
+                <p>We create beautiful, fast and secure website tailored exclusively for your business goals. We cover frontend and backend using top and most innovative tech stacks. We are experienced in using Wordpress CMS.</p>
+                <p>CSS3, Bootstrap, SCSS, BEM, RWD, JavaScript, jQuery, ES6+, Gulp, Git, NPM, PWA, React, Redux, NodeJS, PHP, MySQL, MongoDB, WordPress, ACF, WooCommerce</p>
+            </div>
+            <div class="right side">
+                <img src="imgs/awww-stack.png" alt="Stack">
+            </div>
+        </section>
+        <footer>
+            <div class="contact">
+                <p>AL. POKOJU 1 (XI PIĘTRO)</p>
+                <p>31-548 KRAKÓW</p>
+                <hr>
+                <p>TEL. <span>+48 504 020 682</span></p>
+                <p>EMAIL. <span>JOIN@AWWW.SOFTWARE</span></p>
+                <div class="socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <h3>Formularz kontaktowy</h3>
+                    <div class="input-group">
+                        <input class="inp-name" id="name" type="text" required="">
+                        <label class="lab-name" for="name">IMIĘ I NAZWISKO</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="inp-email" id="email" type="text" required="">
+                        <label class="lab-email" for="email">ADRES E-MAIL</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="inp-tel" id="tel" type="text" required="">
+                        <label class="lab-tel" for="tel">NUMER TELEFONU</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="inp-topic" id="topic" type="text" required="">
+                        <label class="lab-topic" for="topic">TEMAT WIADOMOŚCI</label>
+                    </div>
+                    <div class="input-group-big">
+                        <textarea class="inp-mess" name="" id="mess"></textarea>
+                        <label class="lab-mess" for="mess">TREŚĆ WIADOMOŚCI</label>
+                    </div>
+                        
+
+                        
+                    <button>WYŚLIJ WIADOMOŚĆ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>© Copyright 2018 Infinity Power International. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

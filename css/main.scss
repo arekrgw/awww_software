@@ -7,11 +7,20 @@
 }
 
 $headingColor: #4b479e;
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+button{
+    cursor: pointer;
+}
 header{
     position: relative;
     width: 100%;
@@ -33,6 +42,8 @@ nav{
     top: 15px;
     right: 25px;
     color: white;
+    z-index: 2;
+    cursor: pointer;
 }
 .logo{
     display: flex;
@@ -58,28 +69,40 @@ nav{
     list-style-type: none;
     position: fixed;
     top: 0;
+    width: 100%;
     bottom: 0;
-    right: 0;
-    left: 0;
+    left: 100%;
     z-index: 2;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+
+    
 }
 
 .nav ul {
     list-style-type: none;
+    width: 60%;
 }
 
 .nav li {
     text-align: center;
-    margin: 15px 0;
-    width: 33.33333%;
+    margin: 25px 0;
     color: #fff;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
+    width: 100%;
+    cursor: pointer;
+
+}
+.ex-hide{
+    font-size: 60px !important;
+    font-weight: 200 !important;
+    cursor: pointer;
 }
 
 .special{
-    width: 40% !important;
     padding: 15px 30px;
     border: 1px solid #5c7cc7;
     border-radius: 25px;
@@ -103,7 +126,7 @@ nav{
 .button-group {
     margin: 60px 20px;
 }
-.button-group button{
+.button-group button, .button-group a{
     padding: 20px 30px;
     color: white;
     font-size: 18px;
@@ -111,6 +134,7 @@ nav{
     width: 100%;
     border: none;
     margin: 10px 0;
+    text-align: center;
 }
 
 .do{
@@ -140,11 +164,6 @@ nav{
 //     white-space: pre;
 // }
 
-section {
-    margin: 15px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-}
 
 .side{
     width: 100%;
@@ -166,6 +185,9 @@ section {
     }
 }
 .whatwedo{
+    margin: 15px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
     .right{
         order: 1
     }
@@ -217,3 +239,139 @@ section {
         }
     }
 }
+
+.tech1, .tech2{
+    padding: 15px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    p:nth-of-type(1){
+        margin-bottom: 20px;
+    }
+    img{
+        padding: 0;
+    }
+}
+
+.tech2{
+    background: none;
+}
+
+footer{
+    background: url(../imgs/bg1.jpg) center center;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    order: 2;
+    width: 100%;
+    margin-top: 50px;
+    p{
+        font-size: 18px; 
+        text-align: center;
+        span{
+            color: #76ad75;
+        }
+    }
+    hr{
+        border: none;
+        margin: 10px 0;
+    }
+    .socials{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        i{
+            font-size: 35px;
+            margin: 0 15px;
+            transition: all 0.3s ease-in-out; 
+            &:hover{
+                color: #76ad75;
+            }
+        }
+    }
+}
+
+.form{
+    order: 1;
+    width: 100%;
+    margin-top: 50px;
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .input-group{
+        width: 100%;
+        position: relative;
+        margin: 30px 0;
+        input{
+            background: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            width: 100%;
+            font-size: 20px;
+            padding: 10px 5px;
+            color: #fff;
+            outline: none;
+
+
+            &:focus ~ label, &:valid ~ label{
+                bottom: 39px;
+                font-size: 12px;
+            }
+        }
+        label{
+            position: absolute;
+            left: 5px;
+            bottom: 10px;
+            transition: all 0.3s ease-in-out;
+            font-size: 18px;
+        }
+    }
+    .input-group-big{
+        position: relative;
+        width: 100%;
+        textarea{
+            background: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            width: 100%;
+            font-size: 20px;
+            padding: 10px 5px;
+            color: #fff;
+            outline: none;
+            min-height: 150px;
+
+        }
+        label{
+            position: absolute;
+            left: 5px;
+            top: -10px;
+            font-size: 12px;
+        }
+    }
+    button{
+        width: 100%;
+        background: none;
+        border: 1px solid #76ad75;
+        color: #76ad75;
+        padding: 15px 0;
+        font-size: 19px;
+        border-radius: 25px;
+        margin-top: 30px;
+    }
+}
+
+.bottom-bar{
+    width: 100%;
+    padding: 40px 0;
+    font-size: 14px;
+    text-align: center;
+    order: 3;
+}
+
