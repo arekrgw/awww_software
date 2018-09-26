@@ -64,10 +64,12 @@
         }
     }
     .tech1{
-        padding: 15px 20px 0 20px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+        .wrapper{
+            padding: 15px 20px 0 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
         .left{
             order: 1;
             width: 50%;
@@ -80,10 +82,12 @@
         }
     }
     .tech2{
-        padding: 15px 20px 0 20px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+        .wrapper{
+            padding: 15px 20px 0 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
         .left{
             order: 2;
             width: 50%;

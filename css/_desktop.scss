@@ -1,0 +1,212 @@
+@media screen and (min-width: 1280px){
+    header .wrapper{
+        width: 1280px;
+        margin: 0 auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 60px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .logo{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        position: static;
+        width: 50%;
+        background: none;
+        display: block;
+        transition: none;
+        ul{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-end;
+            li{
+                width: auto;
+                margin: 0 15px;
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+        
+    }
+    .ex-hide{
+        display: none !important;
+    }
+
+    .landing-page{
+        h1{
+            width: 100%;
+            text-align: left;
+            font-size: 56px;
+        }
+        p{
+            text-align: left;
+            width: 100%;
+            padding: 0;
+            margin-top: 45px;
+        }
+    }
+    .button-group{
+        margin: 100px 0 0 0;
+        width: 100%;
+        justify-content: flex-start;
+        a{
+            padding: 20px 30px;
+            width: auto;
+            margin:0;
+            &:last-child{
+                margin-left: 12px;
+            }
+        }
+    }
+    .line-break::before{
+        content: '\A';
+        white-space: pre;
+    }
+
+    .img-group{
+        display: block;
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        bottom: 40px;
+        img, .mobile{
+            display: block;
+            max-height: 65px;
+            width: 16.66666% !important;
+            &:first-child{
+            }
+        }
+    }
+    .whatwedo{
+        width: 1280px;
+        margin: 100px auto;
+
+        .side{
+            margin-bottom: 100px;
+        }
+        .left{
+            width: calc(50% - 35px);
+            margin-right: 35px;
+        }
+        .right{
+            width: calc(50% - 35px);
+            margin-left: 35px;
+        }
+    }
+    .modals{
+        margin: 0;
+        flex-wrap: nowrap !important;
+    }
+    .modal{
+        width: 25% !important;
+        margin: 0 35px !important;
+        &:first-child{
+            margin-left: 0 !important;
+        }
+        &:last-child{
+            margin-right: 0 !important;
+        }
+    }
+    .tech1, .tech2{
+        .wrapper{
+            width: 1280px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .side{
+            padding: 0 !important;
+            margin: 150px 0;
+        }
+        .left{
+            width: calc(50% - 35px);
+            margin-right: 35px;
+        }
+        .right{
+            width: calc(50% - 35px);
+            margin-left: 35px;
+        }
+    }
+    .tech2{
+        .left{
+            margin: 150px 0 150px 35px;
+        }
+        .right{
+            margin: 150px 35px 150px 0;
+        }
+    }
+    footer{
+        .wrapper{
+            width: 1280px;
+            padding: 70px 0;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+    }
+    
+    .form-btn{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .contact{
+        width: 40%;
+        order: 1;
+        p{
+            text-align: left;
+        }
+        .socials{
+            justify-content: flex-start;
+        }
+        hr{
+            margin-top: 45px;
+        }
+    }
+    .bottom-bar{
+        text-align: left;
+        padding: 70px 0;
+    }
+    .form{
+        width: 60% !important;
+        order: 2;
+        h3{
+            text-align: left;
+            margin-left: 15px;
+        }
+        button{
+            width: auto;
+            padding: 25px 40px;
+            border-radius: 50px;
+            text-align: right;
+            margin-right: 15px;
+        }
+    }
+    .group{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .input-group{
+            width: calc(50% - 30px);
+            margin: 30px 15px;
+        }
+        .input-group-big{
+            margin: 30px 15px;
+        }
+    }
+}

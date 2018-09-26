@@ -24,7 +24,7 @@ var verify = function(){
         name.addEventListener('keyup', function(e){
             var regexp = /[A-Za-z0-9]{3,}/;
             if(regexp.test(name.value))
-                name.style.borderColor = "#00FF00";
+                name.style.borderColor = "#76ad75";
             else
                 name.style.borderColor = "#FF0000";
             
@@ -33,7 +33,7 @@ var verify = function(){
         topic.addEventListener('keyup', function(e){
             var regexp = /[A-Za-z0-9]{3,}/;
             if(regexp.test(topic.value))
-                topic.style.borderColor = "#00FF00";
+                topic.style.borderColor = "#76ad75";
             else
                 topic.style.borderColor = "#FF0000";
             
@@ -42,7 +42,7 @@ var verify = function(){
         mess.addEventListener('keyup', function(e){
             var regexp = /[A-Za-z0-9]{3,}/;
             if(regexp.test(mess.value))
-                mess.style.borderColor = "#00FF00";
+                mess.style.borderColor = "#76ad75";
             else
                 mess.style.borderColor = "#FF0000";
             
@@ -51,7 +51,7 @@ var verify = function(){
         tel.addEventListener('keyup', function(e){
             var regexp = /[0-9]{9}/;
             if(regexp.test(tel.value))
-                tel.style.borderColor = "#00FF00";
+                tel.style.borderColor = "#76ad75";
             else
                 tel.style.borderColor = "#FF0000";
             
@@ -60,7 +60,7 @@ var verify = function(){
         email.addEventListener('keyup', function(e){
             var regexp = /^\S+@\S+$/;
             if(regexp.test(email.value))
-                email.style.borderColor = "#00FF00";
+                email.style.borderColor = "#76ad75";
             else
                 email.style.borderColor = "#FF0000";
             
