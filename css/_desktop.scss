@@ -1,4 +1,4 @@
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1380px){
     header .wrapper{
         width: 1280px;
         margin: 0 auto;
@@ -93,9 +93,11 @@
     .whatwedo{
         width: 1280px;
         margin: 100px auto;
+        box-sizing: border-box;
 
         .side{
             margin-bottom: 100px;
+            padding: 0;
         }
         .left{
             width: calc(50% - 35px);
@@ -111,7 +113,7 @@
         flex-wrap: nowrap !important;
     }
     .modal{
-        width: 25% !important;
+        width: calc(25% - 35px) !important;
         margin: 0 35px !important;
         &:first-child{
             margin-left: 0 !important;
