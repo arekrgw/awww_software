@@ -68,10 +68,15 @@ var verify = function(){
         
 };
 verify();
+var closeMenu = function(){
+    var nav = document.querySelector('.nav');
+    nav.style.left = 100+"%";
+}
 
 var $root = $('html, body');
 
 $('a[href^="#"]').click(function () {
+    closeMenu();
     $root.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);

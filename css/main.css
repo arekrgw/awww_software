@@ -35,12 +35,14 @@ nav {
 
 .hamburger {
   font-size: 35px;
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 25px;
   color: white;
   z-index: 2;
   cursor: pointer; }
+  .hamburger i {
+    text-shadow: 0px 0px 5px #000; }
 
 .logo {
   display: flex;
@@ -114,7 +116,7 @@ nav {
 .button-group {
   margin: 60px 20px; }
 
-.button-group button, .button-group a {
+.button-group a {
   padding: 20px 30px;
   color: white;
   font-size: 18px;
@@ -163,7 +165,8 @@ nav {
 .whatwedo {
   margin: 15px 20px 0 20px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .whatwedo .right {
     order: 1; }
   .whatwedo .left {
@@ -181,8 +184,10 @@ nav {
   padding: 35px;
   margin: 40px 0; }
   .modal img {
+    margin: 0 auto;
     width: 50%;
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    display: block; }
   .modal h4 {
     font-weight: 600;
     color: #161765;
@@ -246,6 +251,7 @@ footer {
     justify-content: center;
     width: 100%; }
     .contact .socials i {
+      cursor: pointer;
       font-size: 35px;
       margin: 0 15px;
       transition: all 0.3s ease-in-out; }
@@ -255,7 +261,7 @@ footer {
 .form {
   order: 1;
   width: 100%;
-  margin-top: 50px; }
+  margin: 50px auto 0; }
   .form h3 {
     text-align: center;
     font-size: 30px; }
@@ -293,7 +299,8 @@ footer {
       padding: 10px 5px;
       color: #fff;
       outline: none;
-      min-height: 150px; }
+      min-height: 150px;
+      resize: none; }
     .form .input-group-big label {
       position: absolute;
       left: 5px;
@@ -307,7 +314,11 @@ footer {
     padding: 15px 0;
     font-size: 19px;
     border-radius: 25px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out; }
+    .form button:hover {
+      background: #76ad75;
+      color: #000; }
 
 .bottom-bar {
   width: 100%;
@@ -315,5 +326,88 @@ footer {
   font-size: 14px;
   text-align: center;
   order: 3; }
+
+@media screen and (min-width: 768px) {
+  .landing-page h1 {
+    font-size: 50px;
+    width: 70%;
+    margin: 0 auto; }
+
+  .landing-page p {
+    font-size: 22px; }
+
+  .button-group {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    width: 60%; }
+    .button-group a {
+      width: calc(50% - 20px);
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+  .whatwedo {
+    margin: 15px 60px 0 60px; }
+
+  .tech1, .tech2 {
+    padding: 15px 60px 0 60px; }
+
+  .form {
+    width: 60%; } }
+@media screen and (min-width: 867px) {
+  .landing-page h1 {
+    font-size: 58px; }
+
+  .whatwedo {
+    margin: 15px 20px 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .whatwedo .left {
+      order: 1;
+      width: 50%;
+      padding: 0 15px; }
+    .whatwedo .right {
+      order: 2;
+      width: 50%;
+      padding: 0 15px; }
+    .whatwedo .modals {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0; }
+      .whatwedo .modals .modal {
+        width: calc(50% - 30px);
+        margin: 15px 15px; }
+
+  .tech1 {
+    padding: 15px 20px 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .tech1 .left {
+      order: 1;
+      width: 50%;
+      padding: 0 15px; }
+    .tech1 .right {
+      order: 2;
+      width: 50%;
+      padding: 0 15px; }
+
+  .tech2 {
+    padding: 15px 20px 0 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .tech2 .left {
+      order: 2;
+      width: 50%;
+      padding: 0 15px; }
+    .tech2 .right {
+      order: 1;
+      width: 50%;
+      padding: 0 15px; } }
 
 /*# sourceMappingURL=main.css.map */
