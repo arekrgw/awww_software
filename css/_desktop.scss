@@ -1,14 +1,15 @@
-@media screen and (min-width: 1380px){
+@media screen and (min-width: 1280px){
     header .wrapper{
         width: 1280px;
         margin: 0 auto;
+        padding: 0 20px;
     }
     nav{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        padding-top: 60px;
+        padding: 60px 20px 0 20px;
     }
     .hamburger{
         display: none;
@@ -91,9 +92,9 @@
         }
     }
     .whatwedo{
-        width: 1280px;
+        width: 1280px !important;
         margin: 100px auto;
-        box-sizing: border-box;
+        padding: 0 20px;
 
         .side{
             margin-bottom: 100px;
@@ -110,49 +111,44 @@
     }
     .modals{
         margin: 0;
-        flex-wrap: nowrap !important;
+        // flex-wrap: nowrap !important;
     }
     .modal{
-        width: calc(25% - 35px) !important;
+        width: calc(25% - 70px) !important;
         margin: 0 35px !important;
-        &:first-child{
-            margin-left: 0 !important;
-        }
-        &:last-child{
-            margin-right: 0 !important;
-        }
     }
     .tech1, .tech2{
+        padding: 0 ;
         .wrapper{
             width: 1280px;
             margin: 0 auto;
             padding: 0;
         }
         .side{
-            padding: 0 !important;
-            margin: 150px 0;
+            padding: 150px 20px;
+            width: 50%;
         }
-        .left{
-            width: calc(50% - 35px);
-            margin-right: 35px;
-        }
-        .right{
-            width: calc(50% - 35px);
-            margin-left: 35px;
-        }
+        // .left{
+        //     width: calc(50% - 35px);
+        //     margin-right: 35px;
+        // }
+        // .right{
+        //     width: calc(50% - 35px);
+        //     margin-left: 35px;
+        // }
     }
-    .tech2{
-        .left{
-            margin: 150px 0 150px 35px;
-        }
-        .right{
-            margin: 150px 35px 150px 0;
-        }
-    }
+    // .tech2{
+    //     .left{
+    //         margin: 150px 0 150px 35px;
+    //     }
+    //     .right{
+    //         margin: 150px 35px 150px 0;
+    //     }
+    // }
     footer{
         .wrapper{
             width: 1280px;
-            padding: 70px 0;
+            padding: 70px 20px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
@@ -182,7 +178,7 @@
     }
     .bottom-bar{
         text-align: left;
-        padding: 70px 0;
+        padding: 70px 0 0 0 ;
     }
     .form{
         width: 60% !important;
